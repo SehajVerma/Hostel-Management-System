@@ -1,0 +1,19 @@
+declare
+
+x number(10);
+begin
+	while 1 loop
+		dbms_output.put_line(" 1. Insert");
+		dbms_output.put_line(" 2. Delete");
+		dbms_output.put_line(" 3. Display");
+		x=&x;
+		if(x==1)
+			insert();
+		if(x==2)
+			delete();
+		if(x==3)
+			display();
+
+	end loop;
+end;
+/

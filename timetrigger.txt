@@ -1,0 +1,7 @@
+create or replace trigger timetrigger
+before update on Wastage 
+begin
+insert into Time
+(Time, c_date) values(time_seq.nextval,sysdate);
+end;
+/
